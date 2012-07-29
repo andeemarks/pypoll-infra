@@ -14,10 +14,7 @@ class python {
                 "pip":
                 command => "sudo easy_install pip",
                 path => "/usr/local/bin:/usr/bin:/bin",
-                refreshonly => true,
-                logoutput => "on_failure",
-                require => Package["python-setuptools"],
-                subscribe => Package["python-setuptools"];
+                require => Package["python-setuptools"];
         }
 }
 
