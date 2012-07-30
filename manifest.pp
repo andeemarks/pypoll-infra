@@ -5,9 +5,9 @@ node "default" {
 
 class python {
         package {
-                "build-essential": ensure => latest;
-                "python": ensure => "2.7.2-7ubuntu2";
-                "python-dev": ensure => "2.7.2-7ubuntu2";
+                "build-essential":   ensure => latest;
+                "python":            ensure => "2.7.3-0ubuntu2";
+                "python-dev":        ensure => "2.7.3-0ubuntu2";
                 "python-setuptools": ensure => installed;
         }
         exec {
