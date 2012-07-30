@@ -32,6 +32,7 @@ class logging {
         file { "/var/log/pypoll.log":
                 owner => ubuntu,
                 group => ubuntu,
-                mode => 644
+                mode => 644,
+                ensure => file
         }
 }
