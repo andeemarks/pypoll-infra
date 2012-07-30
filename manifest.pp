@@ -21,7 +21,7 @@ class python {
 class django {
         package {
                 "django":
-                ensure => "1.3.1",
+                ensure => "1.4",
                 provider => pip,
                 require => Exec["pip"];
         }
