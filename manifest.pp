@@ -1,6 +1,7 @@
 node "default" {
         include python
         include django
+        include logging
 }
 
 class python {
@@ -27,3 +28,10 @@ class django {
         }
 }
 
+class logging {
+        file { "/var/log/pypoll.log":
+                owner => ubuntu,
+                group => ubuntu,
+                mode => 644
+        }
+}
